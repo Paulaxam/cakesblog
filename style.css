@@ -1,0 +1,133 @@
+:root {
+    --black: #191919;
+    --black-purple: #231522;
+    --purple: #53175e;
+    --purple-down: #613d60;
+    --white: #f5f5f5;
+    --main-font: 'Berkshire Swash', cursive;
+    --second-font: 'Martel Sans', sans-serif;
+    --s-font: 1.4rem;
+    --m-font: 1.6rem;
+    --l-font: 2rem;
+    --x-font: 2.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+}
+
+.common-nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    place-content: center;
+    padding: 4px 8px;
+}
+
+.common-nav .logo{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 88px;
+    height: 80px;
+    padding: 4px;
+}
+
+.common-nav .logo img {
+    width: 60%;
+    height: auto;
+}
+
+.common-nav .logo h1 {
+    font-family: var(--main-font);
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.common-nav .icons {
+    display: none;
+    place-items: center;
+    gap: 8px;
+}
+
+.common-nav .icons i{
+    color: var(--black);
+    font-size: var(--l-font);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .hero-img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.hero .div-dec {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+}
+
+.hero .layer1 {
+    background-color: var(--white);
+    top: -53%;
+    left: 7%;
+    transform: scaleX(1.5) rotate(-10deg);
+    filter: drop-shadow(0px 10px 10px var(--black-purple));
+    z-index: 3;
+}
+
+.hero .layer2 {
+    background-color: var(--white);
+    top: -52%;
+    right: -58%;
+    transform: scaleX(1.5) rotate(10deg);
+    filter: drop-shadow(0px 10px 10px var(--black-purple));
+    z-index: 2;
+}
+
+.hero .layer3 {
+    background-color: var(--white);
+    bottom: 6%;
+    left: 7%;
+    transform: scaleX(1.5) rotate(-10deg);
+    filter: drop-shadow(0px -10px 10px var(--black-purple));
+    z-index: 5;
+}
+
+.hero .layer4 {
+    background-color: var(--white);
+    bottom: 9%;
+    right: 72%;
+    transform: scaleX(1.5) rotate(10deg);
+    filter: drop-shadow(0px -10px 10px var(--black-purple));
+    z-index: 4;
+}
+
+
