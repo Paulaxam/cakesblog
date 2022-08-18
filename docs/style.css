@@ -7,9 +7,9 @@
     --main-font: 'Berkshire Swash', cursive;
     --second-font: 'Martel Sans', sans-serif;
     --s-font: 1.4rem;
-    --m-font: 1.6rem;
+    --m-font: 1.8rem;
     --l-font: 2rem;
-    --x-font: 2.4rem;
+    --x-font: 2.6rem;
 }
 
 * {
@@ -174,7 +174,40 @@ main button.main-btn {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 45%;
+    top: 60%;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: rotateZ(4deg);
+    }
+
+    3% {
+        transform: rotateZ(-4deg);
+    }
+
+    6% {
+        transform: rotateZ(6deg);
+    }
+
+    9% {
+        transform: rotateZ(-6deg);
+    }
+
+    12% {
+        transform: rotateZ(8deg);
+    }
+
+    15% {
+        transform: rotateZ(-8deg);
+    }
+
+    18% {
+        transform: rotateZ(0deg);
+    }
 }
 
 .btn {
@@ -184,6 +217,9 @@ main button.main-btn {
     background-color: rgba(255, 255, 255, 0.678);
     border: none;
     border-radius: 8px;
+    box-shadow: 2px 2px 20px rgba(56, 1, 56, 0.555), -2px -2px 20px rgba(56, 1, 56, 0.555);
 }
+
+
 
 
