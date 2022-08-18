@@ -215,12 +215,16 @@ main button.main-btn {
 .btn {
     font-size: var(--m-font);
     font-family: var(--main-font);
-    color: var(--black-purple);
+    color: var(--purple);
     background-color: rgba(255, 255, 255, 0.678);
     border: none;
     border-radius: 8px;
     padding: 8px 12px;
     box-shadow: 2px 2px 20px rgba(56, 1, 56, 0.555), -2px -2px 20px rgba(56, 1, 56, 0.555);
+}
+
+.btn a {
+    color: var(--purple);
 }
 
 
