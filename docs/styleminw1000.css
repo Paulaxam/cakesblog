@@ -1,0 +1,29 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--black-purple);
+    box-shadow: 
+        20px 0 100px 20px black,
+        -20px 0 100px 20px black;
+}
+
+.hero h2.hero-h1 {
+    top: 48px;
+}
+
+.hero h2.hero-h1 {
+    bottom: 16%;
+}
+
+.hero .layer1 {
+    top: -50%;
+    left: -4%;
+}
+
+.hero .layer3 {
+    bottom: -38%;
+}
+
+.hero .layer4 {
+    bottom: -39%;
+}

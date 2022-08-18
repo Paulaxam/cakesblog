@@ -41,6 +41,7 @@ body {
     display: flex;
     place-content: center;
     padding: 8px 20px;
+    background-color: var(--white);
 }
 
 .common-nav .logo{
