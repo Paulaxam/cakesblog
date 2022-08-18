@@ -83,6 +83,7 @@ body {
 
 .hero h2 {
     position: absolute;
+    width: 100%;
     z-index: 10;
     font-family: var(--second-font);
     font-size: 2.6rem;
@@ -91,16 +92,25 @@ body {
 }
 
 .hero h2.hero-h1 {
+    top: 0;
+    left: 2%;
 
 }
 
 .hero h2.hero-h2 {
+    text-align: center;
+    top: 30%;
+    color: var(--white);
+    filter: 
+        drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.8)) 
+        drop-shadow(0px -5px 5px rgba(0, 0, 0, 0.8));
     
 }
 
 .hero h2.hero-h3 {
-    bottom: 100px;
-    right: 0;
+    bottom: 15%;
+    right: 2%;
+    text-align: right;
 }
 
 
@@ -110,6 +120,7 @@ body {
     height: auto;
     z-index: 1;
     transform: scaleX(-1);
+    top: 6%;
 }
 
 .hero .div-dec {
@@ -120,37 +131,37 @@ body {
 
 .hero .layer1 {
     background-color: var(--white);
-    top: -56%;
-    left: 7%;
+    top: -54%;
+    left: 5%;
     transform: scaleX(1.5) rotate(-10deg);
-    filter: drop-shadow(0px 10px 10px var(--black-purple));
+    filter: drop-shadow(0px 5px 20px rgba(29, 2, 29, 0.575));
     z-index: 3;
 }
 
 .hero .layer2 {
     background-color: var(--white);
-    top: -52%;
-    right: -65%;
+    top: -50%;
+    right: -20%;
     transform: scaleX(1.5) rotate(10deg);
-    filter: drop-shadow(0px 10px 10px var(--black-purple));
+    filter: drop-shadow(0px 5px 20px rgba(29, 2, 29, 0.575));
     z-index: 2;
 }
 
 .hero .layer3 {
     background-color: var(--white);
-    bottom: -23%;
-    left: 7%;
+    bottom: -34%;
+    left: 10%;
     transform: scaleX(1.5) rotate(-10deg);
-    filter: drop-shadow(0px -10px 10px var(--black-purple));
+    filter: drop-shadow(0px 5px 20px rgba(29, 2, 29, 0.575));
     z-index: 5;
 }
 
 .hero .layer4 {
     background-color: var(--white);
-    bottom: -18%;
-    right: 72%;
+    bottom: -29%;
+    right: 38%;
     transform: scaleX(1.5) rotate(10deg);
-    filter: drop-shadow(0px -10px 10px var(--black-purple));
+    filter: drop-shadow(0px 5px 20px rgba(29, 2, 29, 0.575));
     z-index: 4;
 }
 
