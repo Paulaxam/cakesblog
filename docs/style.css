@@ -8,7 +8,7 @@
     --second-font: 'Martel Sans', sans-serif;
     --s-font: 1.4rem;
     --m-font: 1.8rem;
-    --l-font: 2rem;
+    --l-font: 2.2rem;
     --x-font: 2.6rem;
 }
 
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -40,7 +40,7 @@ body {
     height: 80px;
     display: flex;
     place-content: center;
-    padding: 4px 8px;
+    padding: 8px 12px;
 }
 
 .common-nav .logo{
@@ -168,7 +168,6 @@ body {
 main button.main-btn {
     width: max-content;
     height: auto;
-    padding: 8px 12px;
     position: absolute;
     z-index: 10;
     left: 0;
@@ -217,6 +216,7 @@ main button.main-btn {
     background-color: rgba(255, 255, 255, 0.678);
     border: none;
     border-radius: 8px;
+    padding: 8px 12px;
     box-shadow: 2px 2px 20px rgba(56, 1, 56, 0.555), -2px -2px 20px rgba(56, 1, 56, 0.555);
 }
 

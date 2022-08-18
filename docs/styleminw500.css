@@ -1,0 +1,13 @@
+.common-nav .icons {
+    display: flex;
+}
+
+.common-nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    font-size: var(--l-font);
+    padding: 12px 16px;
+}
