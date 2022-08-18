@@ -1,0 +1,8 @@
+.common-nav .icons {
+    display: flex;
+}
+
+.common-nav {
+    justify-content: space-between;
+    align-items: center;
+}

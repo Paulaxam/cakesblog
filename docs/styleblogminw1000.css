@@ -1,0 +1,8 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--black-purple);
+    box-shadow: 
+        20px 0 100px 20px black,
+        -20px 0 100px 20px black;
+}
