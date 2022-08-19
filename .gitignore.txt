@@ -1,3 +1,0 @@
-/imagenes
-imagenes
-imagenes/black-background.jpg
