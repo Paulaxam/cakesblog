@@ -37,9 +37,10 @@ body {
 
 .body-back-img img{
     position: absolute;
-    width: 100%;
-    min-width: 500px;
-    max-width: 700px;
+    width: auto;
+    height: 100%;
+    min-height: 600px;
+    max-height: 920px;
     z-index: 1;
     margin: 0 auto;
     left: 0;
@@ -109,6 +110,7 @@ div.card {
     position: relative;
     cursor: pointer;
     width: 80%;
+    max-width: 400px;
     height: 150px;
     background-color: var(--black);
     margin: 0 auto;
