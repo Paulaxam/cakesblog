@@ -37,8 +37,9 @@ body {
 
 .body-back-img img{
     position: absolute;
-    height: 100vh;
     width: 100%;
+    min-width: 500px;
+    max-width: 700px;
     z-index: 1;
     margin: 0 auto;
     left: 0;
@@ -106,6 +107,7 @@ body {
 
 div.card {
     position: relative;
+    cursor: pointer;
     width: 80%;
     height: 150px;
     background-color: var(--black);
@@ -115,14 +117,41 @@ div.card {
     font-family: var(--second-font);
     font-size: 1rem;
     overflow: hidden;
+    place-content: center;
+    box-shadow: -5px 5px 30px 5px rgba(0, 0, 0, 0.616);
+}
+
+div.card a {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
 }
 
 div.card .card-text {
     position: absolute;
     z-index: 2;
     width: 50%;
+    height: 100%;
     text-align: center;
     padding: 20px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.card .card-text h3 {
+    padding-bottom: 4px;
+    color: rgb(212, 4, 212);
+}
+
+div.card .card-text p {
+    width: 100%;
+    height: max-content;
+    justify-self: center;
+    align-self: center;
 }
 
 div.card img {
@@ -131,7 +160,11 @@ div.card img {
     height: auto;
     z-index: 3;
     left: 50%;
-    top: 20%;
+    align-self: center;
+    filter: drop-shadow(0px 0px 31px rgba(0, 0, 0, 0.575))
+         drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.25))
+         drop-shadow(-5px -5px 7px rgba(0, 0, 0, 0.25));
+
 }
 
 div.card .card-decoration {
