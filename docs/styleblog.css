@@ -88,3 +88,63 @@ body {
     opacity: .9;
 }
 
+.blog-main section.cards-container {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    place-items: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+    overflow-y: scroll;
+}
+
+div.card {
+    position: relative;
+    width: 80%;
+    height: 150px;
+    background-color: var(--black);
+    margin: 0 auto;
+    display: grid;
+    color: var(--white);
+    font-family: var(--second-font);
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+div.card .card-text {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    text-align: center;
+    padding: 20px 8px;
+}
+
+div.card img {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    z-index: 3;
+    left: 50%;
+    top: 20%;
+}
+
+div.card .card-decoration {
+    position: absolute;
+    z-index: 1;
+    border-radius: 60%;
+    width: 130%;
+    height: 130%;
+    background-color: var(--purple);
+    box-shadow: -5px 5px 30px 5px rgba(0, 0, 0, 0.616);
+    left: 60%;
+    top: -23%;
+    transform: rotate(-17deg);
+}
+
+
