@@ -1,3 +1,10 @@
+body {
+    background-image: url('./assets/blogback500.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-blend-mode: overlay;
+}
+
 .common-nav .icons {
     display: flex;
 }
@@ -5,4 +12,10 @@
 .common-nav {
     justify-content: space-between;
     align-items: center;
+}
+
+div.card {
+    max-width: 540px;
+    height: 220px;
+    font-size: 1.2rem;
 }
