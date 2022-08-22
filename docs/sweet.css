@@ -1,0 +1,179 @@
+:root {
+    --black: #191919;
+    --black-purple: #231522;
+    --purple: #53175e;
+    --purple-down: #613d60;
+    --white: #f5f5f5;
+    --main-font: 'Berkshire Swash', cursive;
+    --second-font: 'Martel Sans', sans-serif;
+    --s-font: 1.4rem;
+    --m-font: 1.8rem;
+    --l-font: 2.2rem;
+    --x-font: 2.6rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    background-image: url('./assets/hero1mob.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 150%;
+    background-blend-mode: overlay;
+
+}
+
+.common-nav {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    place-content: center;
+    padding: 8px 20px;
+    background-color: transparent;
+}
+
+.common-nav .logo{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 100px;
+    height: 80px;
+    padding: 4px;
+}
+
+.common-nav .logo a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.common-nav .logo img {
+    width: 60%;
+    height: auto;
+}
+
+.common-nav .logo h1 {
+    font-family: var(--main-font);
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.common-nav .icons {
+    display: none;
+    place-items: center;
+    gap: 8px;
+}
+
+.common-nav .icons i{
+    color: var(--white);
+    font-size: var(--l-font);
+    opacity: .9;
+}
+
+.sweet-main section.sweet-cards-container {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+div.sweet-card {
+    position: relative;
+    cursor: pointer;
+    width: 80%;
+    max-width: 400px;
+    height: 600px;
+    background-color: var(--black);
+    margin: 0 auto;
+    color: var(--white);
+    font-family: var(--second-font);
+    font-size: 1rem;
+    overflow: hidden;
+    box-shadow: -5px 5px 30px 5px rgba(0, 0, 0, 0.616);
+}
+
+div.sweet-card .sweet-card-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto 4fr;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div.sweet-card a {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+}
+
+div.sweet-card img {
+    position: relative;
+    width: 80%;
+    height: auto;
+    z-index: 3;
+    filter: drop-shadow(0px 0px 31px rgba(0, 0, 0, 0.575))
+         drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.25))
+         drop-shadow(-5px -5px 7px rgba(0, 0, 0, 0.25));
+
+}
+
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--purple) var(--black);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 0, 128, 0.356);
+    border-radius: 20px;
+  }
