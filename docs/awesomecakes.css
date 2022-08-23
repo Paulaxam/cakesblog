@@ -114,10 +114,9 @@ body {
 
 div.sweet-card {
     position: relative;
-    cursor: pointer;
     width: 80%;
     max-width: 320px;
-    height: 510px;
+    height: 480px;
     background-color: var(--black);
     margin: 0 auto;
     color: var(--white);
@@ -165,8 +164,9 @@ div.sweet-card img {
 
 div.sweet-card .sweet-card-content h3 {
     color: rgb(241, 9, 241);
-    font-size: var(--m-font);
+    font-size: var(--l-font);
     font-family: var(--main-font);
+    padding-top: 20px;
     padding-bottom: 20px;
 
 }
@@ -216,13 +216,13 @@ div.sweet-card .sweet-card-content h3 {
     place-self: flex-start;
     width: 90%;
     text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.7rem;
+    font-size: var(--s-font);
+    line-height: 2rem;
     margin: 0 auto;
 }
 
 .sweet-card-content .swett-card-txt p {
-    padding-bottom: 8px;
+    padding-bottom: 12px;
 }
 
 /* Works on Firefox */
